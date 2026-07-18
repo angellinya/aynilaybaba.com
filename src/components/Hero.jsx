@@ -3,15 +3,15 @@ import aynilPortrait from '../assets/images/aynil.jpg'
 
 export default function Hero() {
   return (
-    <section className="relative overflow-hidden bg-radial-fade">
-      <div className="mx-auto grid max-w-6xl items-center gap-12 px-6 pb-24 pt-16 md:grid-cols-2 md:pt-24">
+    <section className="relative flex min-h-screen items-center overflow-hidden bg-radial-fade">
+      <div className="mx-auto grid max-w-6xl items-center gap-12 px-6 py-16 md:grid-cols-2">
         <div>
           <Eyebrow className="mb-4">Psychologist · Writer · Speaker</Eyebrow>
           <h1 className="font-serif text-4xl font-semibold leading-[1.1] text-ink sm:text-5xl">
             Understanding the mind, one story at a time.
           </h1>
-          <p className="mt-6 max-w-md text-lg leading-relaxed text-ink/70">
-            I help people navigate their inner world through evidence-based therapy, and explore it
+          <p className="mt-6 max-w-lg text-lg leading-relaxed text-ink/70">
+            I help people navigate their inner world through evidence-based psychological tools, and explore it
             through fiction — because healing and imagination speak the same language.
           </p>
           <div className="mt-10 flex flex-wrap gap-4">
@@ -24,7 +24,7 @@ export default function Hero() {
           </div>
         </div>
 
-        <div className="relative mx-auto aspect-[4/5] w-full max-w-sm">
+        <div className="relative ml-auto aspect-[4/5] w-full max-w-md">
           <div className="absolute -inset-4 rounded-[2rem] bg-gradient-to-br from-clay/30 via-sage/20 to-plum/20 blur-2xl" />
           <img
             src={aynilPortrait}

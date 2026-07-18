@@ -1,4 +1,13 @@
 import SectionHeading from '../components/ui/SectionHeading'
+import Eyebrow from '../components/ui/Eyebrow'
+import aynilPortrait from '../assets/images/aynil2.JPG'
+
+const credentials = [
+  'Creative Writing, Oxford',
+  'Author, The Rise of Chaos',
+  'BSc Psychology, University of Surrey',
+  'MSc Applied Neuroscience, King’s College London',
+]
 
 export default function About() {
   return (
@@ -12,31 +21,28 @@ export default function About() {
       <div className="grid gap-12 md:grid-cols-2 md:gap-20">
         <div className="relative mx-auto aspect-[4/5] w-full max-w-sm">
           <div className="absolute -inset-4 rounded-[2rem] bg-gradient-to-br from-clay/30 via-sage/20 to-plum/20 blur-2xl" />
-          <div className="relative flex h-full w-full items-center justify-center rounded-[2rem] border border-ink/10 bg-white/60 shadow-xl shadow-ink/5">
-            <span className="font-serif text-lg italic text-ink/40">Portrait</span>
-          </div>
+          <img
+            src={aynilPortrait}
+            alt="Aynil Aybaba"
+            className="relative h-full w-full rounded-[2rem] border border-ink/10 object-cover shadow-xl shadow-ink/5"
+          />
         </div>
 
-        <div className="space-y-5 text-ink/70">
-          <p className="leading-relaxed">
-            I'm Aynil Aybaba — a psychologist working at the intersection of neuroscience and
-            everyday life, and a writer exploring the same terrain through fiction.
+        <div className="space-y-8 text-ink/70">
+          <p className="font-serif text-2xl leading-snug text-ink">
+            I help people explore their minds, emotions, and stories—both theirs and my own. When
+            I’m not guiding sessions or writing, you’ll find me riding horses or dancing through
+            the nature.
           </p>
-          <p className="leading-relaxed">
-            In session, I draw on evidence-based approaches like ACT and CBT to help people
-            understand their patterns and build a more grounded relationship with themselves. In
-            fiction, I follow characters through the same questions — who am I when everything
-            changes, and what do I choose to become?
-          </p>
-          <p className="leading-relaxed">
-            Both practices come from the same conviction: that self-understanding, however we arrive
-            at it, is worth pursuing.
-          </p>
-          <p className="leading-relaxed">
-            My work draws on years of clinical training alongside an ongoing curiosity about how
-            neuroscience research translates into everyday, livable practice — for the people I work
-            with, and for the characters I write.
-          </p>
+
+          <div className="border-t border-ink/10 pt-6">
+            <Eyebrow className="mb-3 text-xs">Credentials</Eyebrow>
+            <ul className="space-y-2 text-sm text-ink/70">
+              {credentials.map((credential) => (
+                <li key={credential}>{credential}</li>
+              ))}
+            </ul>
+          </div>
         </div>
       </div>
     </section>
