@@ -9,6 +9,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "postbuild": "cp dist/index.html dist/404.html",
     "lint": "eslint .",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
