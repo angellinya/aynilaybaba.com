@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
 
 const variants = {
-  primary: 'bg-plum text-cream hover:shadow-lg hover:shadow-plum/20',
+  primary: 'bg-amber text-cream hover:shadow-lg hover:shadow-amber/30',
   accent: 'bg-clay text-ink hover:shadow-lg hover:shadow-clay/30',
   outline: 'border border-ink/15 text-ink hover:border-clay hover:text-clay',
 }
@@ -9,6 +9,7 @@ const variants = {
 export default function Button({
   to,
   href,
+  type,
   variant = 'primary',
   className = '',
   children,
@@ -24,9 +25,17 @@ export default function Button({
     )
   }
 
+  if (href) {
+    return (
+      <a href={href} className={classes} {...props}>
+        {children}
+      </a>
+    )
+  }
+
   return (
-    <a href={href} className={classes} {...props}>
+    <button type={type || 'button'} className={classes} {...props}>
       {children}
-    </a>
+    </button>
   )
 }

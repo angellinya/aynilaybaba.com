@@ -4,17 +4,18 @@
   --font-serif: 'Playfair Display', serif;
   --font-sans: 'Inter', sans-serif;
 
-  --color-ink: #241f1a;
-  --color-cream: #faf6f0;
-  --color-clay: #c98a6b;
-  --color-sage: #7c8b6f;
-  --color-plum: #5b3a4a;
+  --color-ink: #2e2620;
+  --color-cream: #faf7f2;
+  --color-clay: #b29b86;
+  --color-sage: #8c9686;
+  --color-plum: #6c8599;
+  --color-amber: #b8864b;
 }
 
 @utility bg-radial-fade {
   background-image: radial-gradient(
     circle at top right,
-    rgba(201, 138, 107, 0.18),
+    rgba(178, 155, 134, 0.18),
     transparent 60%
   );
 }
