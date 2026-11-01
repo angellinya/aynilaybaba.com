@@ -30,9 +30,8 @@ export default function Hero() {
           </h1>
 
           <p className="mt-8 max-w-lg text-lg leading-relaxed text-ink/70">
-            Based in Amsterdam, I bring together psychology, neuroscience, and storytelling to
-            help people understand themselves, navigate change, and create more intentional
-            lives.
+            I bring together psychology, neuroscience, and storytelling to help people
+            understand themselves, navigate change, and create more intentional lives.
           </p>
 
           <div className="relative mt-12 aspect-[4/5] w-full max-w-xs overflow-hidden rounded-[2rem] border border-white/40 shadow-2xl shadow-ink/10 lg:hidden">

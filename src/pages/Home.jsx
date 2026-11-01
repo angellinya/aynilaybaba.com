@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom'
 import Hero from '../components/Hero'
 import Seo from '../components/Seo'
 import { Button, Card, Eyebrow } from '../components/ui'
@@ -166,17 +165,20 @@ export default function Home() {
             </h2>
           </div>
 
-          <div className="grid gap-x-12 gap-y-10 sm:grid-cols-2 sm:max-w-xl">
-            {explore.map((item) => (
-              <Link key={item.title} to={item.to} className="group block">
-                <h3 className="font-serif text-xl font-semibold text-ink transition-colors group-hover:text-clay">
+          <div className="grid gap-8 md:grid-cols-2">
+            {explore.map((item, i) => (
+              <Card key={item.title} to={item.to} className="p-10">
+                <span className="mb-8 flex h-14 w-14 items-center justify-center rounded-full bg-ink/5 font-serif text-xl text-ink/60">
+                  {String(i + 1).padStart(2, '0')}
+                </span>
+                <h3 className="mb-4 font-serif text-2xl font-semibold text-ink transition-colors group-hover:text-clay">
                   {item.title}
                 </h3>
-                <p className="mt-2 text-sm leading-relaxed text-ink/60">{item.description}</p>
-                <span className="mt-4 inline-block text-sm font-semibold text-clay transition-transform group-hover:translate-x-1">
+                <p className="text-base leading-relaxed text-ink/65">{item.description}</p>
+                <span className="mt-8 inline-block text-base font-semibold text-clay transition-transform group-hover:translate-x-1">
                   Explore →
                 </span>
-              </Link>
+              </Card>
             ))}
           </div>
         </div>
