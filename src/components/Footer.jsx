@@ -12,7 +12,7 @@ const socials = [
   { label: 'Instagram', href: 'https://www.instagram.com/angellinya.writes/' },
   { label: 'YouTube', href: 'https://www.youtube.com/@aynilaybaba' },
   { label: 'TikTok', href: 'https://www.tiktok.com/@aynilaybaba' },
-  { label: 'Email', href: 'mailto:hello@aynilaybaba.com' },
+  { label: 'Email', href: 'mailto:ps.aynilaybaba@gmail.com' },
 ]
 
 export default function Footer() {

@@ -6,7 +6,7 @@ const socials = [
   { label: 'Instagram', href: 'https://www.instagram.com/angellinya.writes/' },
   { label: 'YouTube', href: 'https://www.youtube.com/@aynilaybaba' },
   { label: 'TikTok', href: 'https://www.tiktok.com/@aynilaybaba' },
-  { label: 'Email', href: 'mailto:hello@aynilaybaba.com' },
+  { label: 'Email', href: 'mailto:ps.aynilaybaba@gmail.com' },
 ]
 
 const inquiryTypes = [
@@ -41,7 +41,7 @@ export default function Contact() {
 
     const subject = `${form.type}: enquiry from ${form.name}`
     const body = `${form.message}\n\n${form.name} (${form.email})`
-    window.location.href = `mailto:hello@aynilaybaba.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`
+    window.location.href = `mailto:ps.aynilaybaba@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`
   }
 
   const fieldClass = (field) =>
@@ -146,10 +146,10 @@ export default function Contact() {
           <div>
             <Eyebrow className="mb-3 text-xs">Prefer email?</Eyebrow>
             <a
-              href="mailto:hello@aynilaybaba.com"
+              href="mailto:ps.aynilaybaba@gmail.com"
               className="font-serif text-lg text-ink underline decoration-ink/20 underline-offset-4 hover:decoration-ink/60"
             >
-              hello@aynilaybaba.com
+              ps.aynilaybaba@gmail.com
             </a>
           </div>
 

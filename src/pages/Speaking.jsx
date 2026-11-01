@@ -6,7 +6,7 @@ const topics = [
   'Mental wellbeing & emotional regulation',
   'Psychological flexibility & resilience',
   'Habits, motivation & behaviour change',
-  'The human experience, through story',
+  'Mindfulness & self-compassion',
 ]
 
 const formats = [
@@ -33,6 +33,7 @@ const experience = [
   'ESU Public Speaking World Finalist',
   'İTÜ ACT Days Conference: presented to 200+ professionals on ACT and neuroscience',
   'ACT Türkiye: led a workshop on ACT in chronic physical illness',
+  'HappySpace Wellbeing hosted workshops on anxiety, self-compassion, meaning, and behaviour change, drawing on ACT, CBT, and mindfulness',
 ]
 
 export default function Speaking() {
@@ -117,7 +118,7 @@ export default function Speaking() {
             Tell me a little about your audience and what you're looking for, and I'll get back to
             you.
           </p>
-          <Button href="mailto:hello@aynilaybaba.com?subject=Speaking%20Enquiry" variant="primary" className="mt-6">
+          <Button href="mailto:ps.aynilaybaba@gmail.com?subject=Speaking%20Enquiry" variant="primary" className="mt-6">
             Enquire About Speaking
           </Button>
         </div>
