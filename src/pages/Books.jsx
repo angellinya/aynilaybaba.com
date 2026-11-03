@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import Seo from '../components/Seo'
-import { Button, Eyebrow } from '../components/ui'
+import NewsletterForm from '../components/NewsletterForm'
+import { Eyebrow } from '../components/ui'
 import bookCover from '../assets/images/Anica1.png'
 import anicaVideo from '../assets/videos/anicamainvideo.mp4'
 
@@ -161,13 +162,7 @@ export default function Books() {
           <p className="mx-auto mt-6 max-w-md text-ink/65">
             Join the waitlist for a front-row seat to how it all comes together.
           </p>
-          <Button
-            href="mailto:ps.aynilaybaba@gmail.com?subject=Newsletter%20Signup"
-            variant="primary"
-            className="mt-8"
-          >
-            Sign Up
-          </Button>
+          <NewsletterForm className="mt-8 max-w-sm" />
         </div>
       </section>
     </>
